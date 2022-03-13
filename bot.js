@@ -25,3 +25,8 @@ bot.on('message', async (message) => {
       return message.reply('I am working!');
     }
   });
+
+  // Require dependencies
+const { Client } = require('discord.js');
+const dotenv = require('dotenv');
+const axios = require('axios'); 	// New line that we added
