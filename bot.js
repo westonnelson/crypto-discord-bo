@@ -30,3 +30,14 @@ bot.on('message', async (message) => {
 const { Client } = require('discord.js');
 const dotenv = require('dotenv');
 const axios = require('axios'); 	// New line that we added
+
+//1. Import coingecko-api
+const CoinGecko = require('coingecko-api');
+
+//2. Initiate the CoinGecko API Client
+const CoinGeckoClient = new CoinGecko();
+
+//3. Make calls
+var func = async() => {
+  let data = await CoinGeckoClient.ping();
+};
